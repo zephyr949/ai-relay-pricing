@@ -116,7 +116,15 @@ To add a new language, simply create the corresponding JSON file.
 
 ### Quick Deploy (Recommended)
 
-Deploy in 5 minutes with Vercel CLI:
+Deploy with Vercel's one-click deploy, no tools required:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zephyrcicd/ai-relay-pricing)
+
+Click the button above to quickly deploy to Vercel.
+
+### Deploy with Vercel CLI
+
+If you prefer using command-line tools:
 
 ```bash
 # Install Vercel CLI
@@ -128,11 +136,6 @@ vercel
 # Deploy to production  
 vercel --prod
 ```
-
-
-### Vercel One-Click Deploy
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zephyrcicd/ai-relay-pricing)
 
 ### Netlify
 

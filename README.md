@@ -116,7 +116,15 @@ cp .env.example .env
 
 ### 快速部署（推荐）
 
-使用 Vercel CLI 5分钟完成部署：
+使用 Vercel 一键部署，无需安装任何工具：
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zephyrcicd/ai-relay-pricing)
+
+点击上方按钮即可快速部署到 Vercel。
+
+### 使用 Vercel CLI 部署
+
+如果您更喜欢使用命令行工具：
 
 ```bash
 # 安装 Vercel CLI
@@ -128,11 +136,6 @@ vercel
 # 部署到生产环境  
 vercel --prod
 ```
-
-
-### Vercel 一键部署
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zephyrcicd/ai-relay-pricing)
 
 ### Netlify
 

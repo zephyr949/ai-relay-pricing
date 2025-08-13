@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center space-x-2 bg-gray-100 rounded-lg p-1">
+  <div class="flex items-center space-x-2 bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
     <button
       v-for="locale in locales"
       :key="locale.code"
@@ -7,8 +7,8 @@
       :class="[
         'px-3 py-1 text-sm font-medium rounded-md transition-colors duration-200',
         currentLocale === locale.code
-          ? 'bg-white text-gray-900 shadow-sm'
-          : 'text-gray-600 hover:text-gray-900'
+          ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm'
+          : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
       ]"
     >
       {{ locale.name }}

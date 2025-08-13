@@ -1,0 +1,71 @@
+{
+  "title": "服务套餐",
+  "subtitle": "从体验到专业的完整解决方案，满足不同层次的开发需求。",
+  "popular": "最受欢迎",
+  "per_month": "/月",
+  "per_day": "/天",
+  "whats_included": "包含内容：",
+  "purchase_temporarily_unavailable": "暂时无法购买",
+  "plans": {
+    "trial": {
+      "name": "体验套餐",
+      "description": "低成本试用，快速上手体验",
+      "button": "购买",
+      "features": {
+        "supported_models": "支持模型：{models}",
+        "daily_budget": "日预算：{amount}",
+        "unlimited_requests": "无限请求次数/天",
+        "basic_support": "基础支持"
+      }
+    },
+    "basic": {
+      "name": "基础套餐",
+      "description": "个人开发者的理想选择",
+      "button": "购买",
+      "features": {
+        "supported_models": "支持模型：{models}",
+        "monthly_budget": "月度预算：{amount}",
+        "daily_budget": "日预算：{amount}",
+        "unlimited_requests": "无限请求次数/月",
+        "basic_support": "基础支持"
+      }
+    },
+    "standard": {
+      "name": "标准套餐",
+      "description": "性价比首选，满足日常开发需求",
+      "button": "购买",
+      "features": {
+        "supported_models": "支持模型：{models}",
+        "monthly_budget": "月度预算：{amount}",
+        "daily_budget": "日预算：{amount}",
+        "unlimited_requests": "无限请求次数/月",
+        "basic_support": "基础支持"
+      }
+    },
+    "professional": {
+      "name": "专业套餐",
+      "description": "重度使用者首选，充足预算保障",
+      "button": "购买",
+      "features": {
+        "supported_models": "支持模型：{models}",
+        "monthly_budget": "月度预算：{amount}",
+        "daily_budget": "日预算：{amount}",
+        "unlimited_requests": "无限请求次数/月",
+        "basic_support": "基础支持"
+      }
+    }
+  },
+  "purchase_page": {
+    "title": "购买 {plan}",
+    "wechat_contact": "通过微信联系我们",
+    "wechat_description": "如需购买套餐或获取更多信息，请添加微信联系我们：",
+    "wechat_id_label": "微信号",
+    "click_to_copy": "点击复制",
+    "copied": "已复制！",
+    "usage_guide": "使用指南",
+    "usage_description": "购买并收到API密钥后，请设置以下环境变量：",
+    "copy_code": "复制代码",
+    "copied": "已复制！",
+    "back_to_pricing": "返回定价页面"
+  }
+}

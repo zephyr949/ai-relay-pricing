@@ -1,0 +1,34 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- AI Relay Lightning Icon -->
+  <g transform="translate(16,16)">
+    <!-- Lightning bolt shape representing AI speed and relay -->
+    <path d="M-4,-8 L2,-2 L-1,-2 L4,8 L-2,2 L1,2 Z" 
+          fill="#3b82f6" 
+          stroke="#1d4ed8" 
+          stroke-width="0.5"/>
+    
+    <!-- Data flow particles around lightning -->
+    <circle cx="-6" cy="-4" r="0.8" fill="#60a5fa">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="6" cy="4" r="0.8" fill="#60a5fa">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-5" cy="3" r="0.6" fill="#93c5fd">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="5" cy="-3" r="0.6" fill="#93c5fd">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Connection lines showing relay -->
+    <path d="M-8,0 Q-6,0 -4,0" stroke="#3b82f6" stroke-width="1.5" opacity="0.7" fill="none"/>
+    <path d="M4,0 Q6,0 8,0" stroke="#3b82f6" stroke-width="1.5" opacity="0.7" fill="none"/>
+    
+    <!-- Energy ring -->
+    <circle cx="0" cy="0" r="9" stroke="#3b82f6" stroke-width="0.8" opacity="0.3" fill="none">
+      <animate attributeName="r" values="9;11;9" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

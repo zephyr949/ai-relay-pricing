@@ -1,0 +1,228 @@
+# AI Relay Pricing
+
+<div align="center">
+  <h3>An Elegant API Pricing Display Page</h3>
+  <p>Built with Vue 3 + TypeScript + Tailwind CSS</p>
+  
+  English | [简体中文](./README.md)
+  
+  [Live Demo](https://ai-relay-pricing.vercel.app/)
+</div>
+
+## ✨ Features
+
+- 🎨 **Modern Design** - Linear-inspired design style, clean and elegant
+- 🌍 **Multi-language** - Built-in Chinese/English switching, easily extensible
+- 📱 **Responsive Layout** - Perfect adaptation for desktop and mobile
+- ⚡ **Lightning Fast** - Powered by Vite for blazing fast development
+- 🔧 **Flexible Configuration** - Easy customization through environment variables
+- 💳 **Payment Ready** - WeChat payment integration support
+- 🎯 **Type Safe** - Written in TypeScript with complete type coverage
+
+## 🖼️ Preview
+
+### 📱 Live Demo
+- **Demo**: [ai-relay-pricing-demo.vercel.app](https://ai-relay-pricing.vercel.app)
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js >= 18.0.0
+- pnpm >= 8.0.0 (recommended) or npm/yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/zephyrcicd/ai-relay-pricing.git
+cd ai-relay-pricing
+
+# Install dependencies
+pnpm install
+
+# Copy environment variables
+cp .env.example .env
+
+# Start development server
+pnpm dev
+```
+
+Visit http://localhost:3000 to view the page
+
+### Build & Deploy
+
+```bash
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
+```
+
+## 📦 Project Structure
+
+```
+ai-relay-pricing/
+├── docs/                 # Project documentation
+├── public/              
+│   ├── locales/         # Language files
+│   └── images/          # Static images
+├── src/
+│   ├── components/      # Vue components
+│   ├── composables/     # Composition functions
+│   ├── pages/          # Page components
+│   ├── router/         # Router configuration
+│   ├── styles/         # Style files
+│   ├── types/          # TypeScript types
+│   └── utils/          # Utility functions
+├── .env.example        # Environment variables template
+├── package.json        
+└── README.md
+```
+
+## ⚙️ Configuration
+
+### Environment Variables
+
+Copy and edit the environment variables file:
+
+```bash
+cp .env.example .env
+```
+
+Modify the configuration items in the `.env` file as needed. All configuration items are documented with comments in the example file.
+
+### Multi-language Support
+
+Language files are located in `public/locales/`:
+
+- `en.json` - English language pack
+- `zh.json` - Chinese language pack
+
+To add a new language, simply create the corresponding JSON file.
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Vue 3](https://vuejs.org/) - Progressive JavaScript Framework
+- **Language:** [TypeScript](https://www.typescriptlang.org/) - JavaScript with Type Safety
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS Framework
+- **Build Tool:** [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- **Routing:** [Vue Router](https://router.vuejs.org/) - Official Vue.js Router
+- **UI Components:** [Headless UI](https://headlessui.dev/) - Unstyled Component Library
+
+
+## 🚢 Deployment
+
+### Quick Deploy (Recommended)
+
+Deploy in 5 minutes with Vercel CLI:
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+
+# Deploy to production  
+vercel --prod
+```
+
+
+### Vercel One-Click Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zephyrcicd/ai-relay-pricing)
+
+### Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zephyrcicd/ai-relay-pricing)
+
+### Other Deployment Options
+
+
+## 🤝 Contributing
+
+Contributions are welcome! Please see our [Contributing Guide](./CONTRIBUTING.md) for details.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 Commit Convention
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/):
+
+- `feat:` New features
+- `fix:` Bug fixes
+- `docs:` Documentation changes
+- `style:` Code style changes (formatting, etc.)
+- `refactor:` Code refactoring
+- `perf:` Performance improvements
+- `test:` Adding tests
+- `chore:` Build process or auxiliary tool changes
+
+## ⚠️ Disclaimer
+
+This project is an open-source pricing page template intended for educational and reference purposes only. 
+
+**IMPORTANT NOTICE:**
+- This project is NOT officially affiliated with Anthropic or Claude AI
+- It does NOT provide actual API services or payment processing
+- **All code in this project was generated by AI (Claude) - the maintainer assumes no responsibility for the code content**
+- Users are responsible for implementing their own backend services and payment systems
+- Any use of this template must comply with applicable laws and regulations
+- The maintainers assume no responsibility for any misuse of this template
+
+**Usage Guidelines:**
+- Ensure you have proper authorization if using any third-party trademarks or services
+- Implement proper security measures for production deployments
+- Always use HTTPS for API communications
+- Never store sensitive information in frontend code
+- Follow best practices for handling user data and payments
+- **Please review and test all code thoroughly before use**
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+MIT License
+
+Copyright (c) 2024 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## 🙏 Acknowledgments
+
+- [Vue.js](https://vuejs.org/) - For the powerful frontend framework
+- [Tailwind CSS](https://tailwindcss.com/) - For the excellent styling system
+- [Linear](https://linear.app/) - For design inspiration
+- [Vite](https://vitejs.dev/) - For the lightning-fast development experience
+
+## 🌟 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=zephyrcicd/ai-relay-pricing&type=Date)](https://star-history.com/#zephyrcicd/ai-relay-pricing&Date)
+
+---
+
+<div align="center">
+  If this project helps you, please give it a ⭐️ Star!
+</div>

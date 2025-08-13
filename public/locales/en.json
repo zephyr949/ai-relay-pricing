@@ -1,0 +1,71 @@
+{
+  "title": "Service Plans",
+  "subtitle": "Complete solutions from trial to professional, meeting diverse development needs.",
+  "popular": "Most Popular",
+  "per_month": "/month",
+  "per_day": "/day",
+  "whats_included": "What's included:",
+  "purchase_temporarily_unavailable": "Purchase Temporarily Unavailable",
+  "plans": {
+    "trial": {
+      "name": "Trial Plan",
+      "description": "Low-cost trial for hands-on experience",
+      "button": "Purchase",
+      "features": {
+        "supported_models": "Supported models: {models}",
+        "daily_budget": "Daily Budget: {amount}",
+        "unlimited_requests": "Max Unlimited requests/day",
+        "basic_support": "Basic support"
+      }
+    },
+    "basic": {
+      "name": "Basic Plan",
+      "description": "Perfect choice for individual developers",
+      "button": "Purchase",
+      "features": {
+        "supported_models": "Supported models: {models}",
+        "monthly_budget": "Monthly Budget: {amount}",
+        "daily_budget": "Daily Budget: {amount}",
+        "unlimited_requests": "Max Unlimited requests/month",
+        "basic_support": "Basic support"
+      }
+    },
+    "standard": {
+      "name": "Standard Plan",
+      "description": "Best value option for daily development needs",
+      "button": "Purchase",
+      "features": {
+        "supported_models": "Supported models: {models}",
+        "monthly_budget": "Monthly Budget: {amount}",
+        "daily_budget": "Daily Budget: {amount}",
+        "unlimited_requests": "Max Unlimited requests/month",
+        "basic_support": "Basic support"
+      }
+    },
+    "professional": {
+      "name": "Professional Plan",
+      "description": "For heavy users who need ample budget",
+      "button": "Purchase",
+      "features": {
+        "supported_models": "Supported models: {models}",
+        "monthly_budget": "Monthly Budget: {amount}",
+        "daily_budget": "Daily Budget: {amount}",
+        "unlimited_requests": "Max Unlimited requests/month",
+        "basic_support": "Basic support"
+      }
+    }
+  },
+  "purchase_page": {
+    "title": "Purchase {plan}",
+    "wechat_contact": "Contact us via WeChat",
+    "wechat_description": "To purchase a plan or get more information, please add us on WeChat:",
+    "wechat_id_label": "WeChat ID",
+    "click_to_copy": "Click to copy",
+    "copied": "Copied!",
+    "usage_guide": "Usage Guide",
+    "usage_description": "After purchasing and receiving your API key, set the following environment variables:",
+    "copy_code": "Copy Code",
+    "copied": "Copied!",
+    "back_to_pricing": "Back to Pricing"
+  }
+}

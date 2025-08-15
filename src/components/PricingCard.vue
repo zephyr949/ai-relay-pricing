@@ -18,7 +18,7 @@
     <!-- Plan Header -->
     <div class="text-center mb-6">
       <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-        {{ t(plan.nameKey) }}
+        <span v-if="plan.popular">🔥 </span>{{ t(plan.nameKey) }}
       </h3>
       <p class="text-gray-600 dark:text-gray-400 text-base">
         {{ t(plan.descriptionKey) }}

@@ -11,7 +11,7 @@
   "plans": {
     "trial": {
       "name": "体验套餐",
-      "description": "低成本试用，快速上手体验",
+      "description": "性价比高，不定期使用的第一选择",
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
@@ -22,7 +22,7 @@
     },
     "basic": {
       "name": "标准套餐",
-      "description": "个人开发者的理想选择",
+      "description": "针对日常开发，稳定可靠的热门选择",
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
@@ -34,7 +34,7 @@
     },
     "standard": {
       "name": "专业套餐",
-      "description": "性价比首选，满足日常开发需求",
+      "description": "高频使用，满足密集开发需求",
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",

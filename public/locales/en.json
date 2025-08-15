@@ -11,7 +11,7 @@
   "plans": {
     "trial": {
       "name": "Trial Plan",
-      "description": "Low-cost trial for hands-on experience",
+      "description": "Great value for occasional development needs",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
@@ -22,7 +22,7 @@
     },
     "basic": {
       "name": "Standard Plan",
-      "description": "Perfect choice for individual developers",
+      "description": "Perfect balance for daily development work",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
@@ -34,7 +34,7 @@
     },
     "standard": {
       "name": "Professional Plan",
-      "description": "Best value option for daily development needs",
+      "description": "High-volume usage for intensive development",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",

@@ -56,6 +56,7 @@
     "usage_description": "购买并收到API密钥后，请设置以下环境变量：",
     "copy_code": "复制代码",
     "copied": "已复制！",
-    "back_to_pricing": "返回定价页面"
+    "back_to_pricing": "返回定价页面",
+    "no_refund_notice": "* 成功接入后概不退款"
   }
 }

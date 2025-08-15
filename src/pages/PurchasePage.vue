@@ -40,6 +40,9 @@
             <span class="font-bold text-gray-900 dark:text-white">{{ formatCurrency(selectedPlan.price) }}</span>
             <span class="text-gray-500 dark:text-gray-400 ml-2">{{ t(`per_${selectedPlan.period}`) }}</span>
           </div>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+            {{ t('purchase_page.no_refund_notice') }}
+          </p>
         </div>
 
         <!-- Content Cards -->

@@ -56,6 +56,7 @@
     "usage_description": "After purchasing and receiving your API key, set the following environment variables:",
     "copy_code": "Copy Code",
     "copied": "Copied!",
-    "back_to_pricing": "Back to Pricing"
+    "back_to_pricing": "Back to Pricing",
+    "no_refund_notice": "* No refunds after successful integration"
   }
 }

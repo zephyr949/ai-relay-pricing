@@ -15,6 +15,7 @@
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
+        "total_budget": "Total Budget: {amount}",
         "daily_budget": "Daily Budget: {amount}",
         "unlimited_requests": "Max Unlimited requests/day",
         "basic_support": "Basic support"
@@ -26,7 +27,7 @@
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
-        "weekly_budget": "Weekly Budget: {amount}",
+        "total_budget": "Total Budget: {amount}",
         "daily_budget": "Daily Budget: {amount}",
         "unlimited_requests": "Max Unlimited requests/week",
         "basic_support": "Basic support"
@@ -38,7 +39,7 @@
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
-        "monthly_budget": "Monthly Budget: {amount}",
+        "total_budget": "Total Budget: {amount}",
         "daily_budget": "Daily Budget: {amount}",
         "unlimited_requests": "Max Unlimited requests/month",
         "basic_support": "Basic support"

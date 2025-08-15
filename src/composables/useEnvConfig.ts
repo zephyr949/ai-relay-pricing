@@ -22,31 +22,26 @@ export function useEnvConfig() {
   // 预算配置
   const budgetConfig = computed(() => ({
     trial: {
+      total: parseFloat(import.meta.env.VITE_TRIAL_PLAN_TOTAL_BUDGET || '20'),
       daily: parseFloat(import.meta.env.VITE_TRIAL_PLAN_DAILY_BUDGET || '20'),
       models: import.meta.env.VITE_TRIAL_PLAN_MODELS || 'sonnet-4'
     },
     basic: {
-      weekly: parseFloat(import.meta.env.VITE_BASIC_PLAN_WEEKLY_BUDGET || '150'),
+      total: parseFloat(import.meta.env.VITE_BASIC_PLAN_TOTAL_BUDGET || '175'),
       daily: parseFloat(import.meta.env.VITE_BASIC_PLAN_DAILY_BUDGET || '25'),
       models: import.meta.env.VITE_BASIC_PLAN_MODELS || 'sonnet-4'
     },
     standard: {
-      monthly: parseFloat(import.meta.env.VITE_STANDARD_PLAN_MONTHLY_BUDGET || '1500'),
-      daily: parseFloat(import.meta.env.VITE_STANDARD_PLAN_DAILY_BUDGET || '50'),
+      total: parseFloat(import.meta.env.VITE_STANDARD_PLAN_TOTAL_BUDGET || '750'),
+      daily: parseFloat(import.meta.env.VITE_STANDARD_PLAN_DAILY_BUDGET || '25'),
       models: import.meta.env.VITE_STANDARD_PLAN_MODELS || 'sonnet-4'
     }
   }))
 
   // 根据周期获取预算特性
   const getBudgetFeature = (planId: string, period: string): string => {
-    if (period === 'day') {
-      return `plans.${planId}.features.daily_budget`
-    } else if (period === 'week') {
-      return `plans.${planId}.features.weekly_budget`
-    } else if (period === 'month') {
-      return `plans.${planId}.features.monthly_budget`
-    }
-    return `plans.${planId}.features.daily_budget`
+    // 所有套餐都显示总额度
+    return `plans.${planId}.features.total_budget`
   }
 
   // 动态生成套餐配置
@@ -66,6 +61,7 @@ export function useEnvConfig() {
         features: [
           'plans.trial.features.supported_models',
           getBudgetFeature('trial', trialPeriod),
+          'plans.trial.features.daily_budget',
           'plans.trial.features.unlimited_requests',
           'plans.trial.features.basic_support'
         ],

@@ -15,7 +15,8 @@
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
-        "daily_budget": "日预算：{amount}",
+        "total_budget": "总额度：{amount}",
+        "daily_budget": "日额度：{amount}",
         "unlimited_requests": "无限请求次数/天",
         "basic_support": "基础支持"
       }
@@ -26,8 +27,8 @@
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
-        "weekly_budget": "周度预算：{amount}",
-        "daily_budget": "日预算：{amount}",
+        "total_budget": "总额度：{amount}",
+        "daily_budget": "日额度：{amount}",
         "unlimited_requests": "无限请求次数/周",
         "basic_support": "基础支持"
       }
@@ -38,8 +39,8 @@
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
-        "monthly_budget": "月度预算：{amount}",
-        "daily_budget": "日预算：{amount}",
+        "total_budget": "总额度：{amount}",
+        "daily_budget": "日额度：{amount}",
         "unlimited_requests": "无限请求次数/月",
         "basic_support": "基础支持"
       }

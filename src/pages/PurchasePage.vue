@@ -151,6 +151,8 @@ const formattedFeatures = computed(() => {
       text = text.replace('{models}', budget.models)
     } else if (featureKey.includes('monthly_budget') && budget.monthly) {
       text = text.replace('{amount}', formatBudget(budget.monthly))
+    } else if (featureKey.includes('weekly_budget') && budget.weekly) {
+      text = text.replace('{amount}', formatBudget(budget.weekly))
     } else if (featureKey.includes('daily_budget')) {
       text = text.replace('{amount}', formatBudget(budget.daily))
     }

@@ -113,24 +113,26 @@ const formatFeature = (featureKey: string): string => {
   // 检查是否是支持的模型特性
   if (featureKey.includes('supported_models')) {
     const planType = featureKey.includes('basic') ? 'basic' : 
-                     featureKey.includes('standard') ? 'standard' :
-                     featureKey.includes('professional') ? 'professional' : 'trial'
+                     featureKey.includes('standard') ? 'standard' : 'trial'
     const models = budgetConfig.value[planType].models
     return t.value(featureKey, { models })
   }
   
   // 检查是否是预算相关的特性 - 预算金额固定使用USD格式
   if (featureKey.includes('monthly_budget')) {
-    const planType = featureKey.includes('basic') ? 'basic' : 
-                     featureKey.includes('standard') ? 'standard' : 'professional'
+    const planType = featureKey.includes('standard') ? 'standard' : 'basic'
     const amount = formatBudget(budgetConfig.value[planType].monthly)
+    return t.value(featureKey, { amount })
+  }
+  
+  if (featureKey.includes('weekly_budget')) {
+    const amount = formatBudget(budgetConfig.value.basic.weekly)
     return t.value(featureKey, { amount })
   }
   
   if (featureKey.includes('daily_budget')) {
     const planType = featureKey.includes('basic') ? 'basic' : 
-                     featureKey.includes('standard') ? 'standard' :
-                     featureKey.includes('professional') ? 'professional' : 'trial'
+                     featureKey.includes('standard') ? 'standard' : 'trial'
     const amount = formatBudget(budgetConfig.value[planType].daily)
     return t.value(featureKey, { amount })
   }

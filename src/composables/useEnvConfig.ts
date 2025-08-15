@@ -26,7 +26,7 @@ export function useEnvConfig() {
       models: import.meta.env.VITE_TRIAL_PLAN_MODELS || 'sonnet-4'
     },
     basic: {
-      monthly: parseFloat(import.meta.env.VITE_BASIC_PLAN_MONTHLY_BUDGET || '750'),
+      weekly: parseFloat(import.meta.env.VITE_BASIC_PLAN_WEEKLY_BUDGET || '150'),
       daily: parseFloat(import.meta.env.VITE_BASIC_PLAN_DAILY_BUDGET || '25'),
       models: import.meta.env.VITE_BASIC_PLAN_MODELS || 'sonnet-4'
     },
@@ -34,11 +34,6 @@ export function useEnvConfig() {
       monthly: parseFloat(import.meta.env.VITE_STANDARD_PLAN_MONTHLY_BUDGET || '1500'),
       daily: parseFloat(import.meta.env.VITE_STANDARD_PLAN_DAILY_BUDGET || '50'),
       models: import.meta.env.VITE_STANDARD_PLAN_MODELS || 'sonnet-4'
-    },
-    professional: {
-      monthly: parseFloat(import.meta.env.VITE_PROFESSIONAL_PLAN_MONTHLY_BUDGET || '3000'),
-      daily: parseFloat(import.meta.env.VITE_PROFESSIONAL_PLAN_DAILY_BUDGET || '100'),
-      models: import.meta.env.VITE_PROFESSIONAL_PLAN_MODELS || 'sonnet-4'
     }
   }))
 
@@ -64,12 +59,12 @@ export function useEnvConfig() {
       id: 'basic',
       nameKey: 'plans.basic.name',
       price: parseFloat(import.meta.env.VITE_BASIC_PLAN_PRICE || '9.9'),
-      period: 'month',
+      period: 'week',
       descriptionKey: 'plans.basic.description',
       popular: import.meta.env.VITE_BASIC_PLAN_POPULAR === 'true',
       features: [
         'plans.basic.features.supported_models',
-        'plans.basic.features.monthly_budget',
+        'plans.basic.features.weekly_budget',
         'plans.basic.features.daily_budget',
         'plans.basic.features.unlimited_requests',
         'plans.basic.features.basic_support'
@@ -93,23 +88,6 @@ export function useEnvConfig() {
       ],
       buttonTextKey: 'plans.standard.button',
       unavailable: import.meta.env.VITE_STANDARD_PLAN_AVAILABLE !== 'true'
-    },
-    {
-      id: 'professional',
-      nameKey: 'plans.professional.name', 
-      price: parseFloat(import.meta.env.VITE_PROFESSIONAL_PLAN_PRICE || '39.9'),
-      period: 'month',
-      descriptionKey: 'plans.professional.description',
-      popular: import.meta.env.VITE_PROFESSIONAL_PLAN_POPULAR === 'true',
-      features: [
-        'plans.professional.features.supported_models',
-        'plans.professional.features.monthly_budget',
-        'plans.professional.features.daily_budget',
-        'plans.professional.features.unlimited_requests',
-        'plans.professional.features.basic_support'
-      ],
-      buttonTextKey: 'plans.professional.button',
-      unavailable: import.meta.env.VITE_PROFESSIONAL_PLAN_AVAILABLE !== 'true'
     }
   ])
 

@@ -1,8 +1,10 @@
 {
   "title": "Service Plans",
   "subtitle": "Complete solutions from trial to professional, meeting diverse development needs.",
+  "recommendation": "Due to frequent AI policy changes, we recommend purchasing the <strong>weekly Standard Plan</strong>",
   "popular": "Most Popular",
   "per_month": "/month",
+  "per_week": "/week",
   "per_day": "/day",
   "whats_included": "What's included:",
   "purchase_temporarily_unavailable": "Purchase Temporarily Unavailable",
@@ -19,32 +21,20 @@
       }
     },
     "basic": {
-      "name": "Basic Plan",
+      "name": "Standard Plan",
       "description": "Perfect choice for individual developers",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
-        "monthly_budget": "Monthly Budget: {amount}",
+        "weekly_budget": "Weekly Budget: {amount}",
         "daily_budget": "Daily Budget: {amount}",
-        "unlimited_requests": "Max Unlimited requests/month",
+        "unlimited_requests": "Max Unlimited requests/week",
         "basic_support": "Basic support"
       }
     },
     "standard": {
-      "name": "Standard Plan",
-      "description": "Best value option for daily development needs",
-      "button": "Purchase",
-      "features": {
-        "supported_models": "Supported models: {models}",
-        "monthly_budget": "Monthly Budget: {amount}",
-        "daily_budget": "Daily Budget: {amount}",
-        "unlimited_requests": "Max Unlimited requests/month",
-        "basic_support": "Basic support"
-      }
-    },
-    "professional": {
       "name": "Professional Plan",
-      "description": "For heavy users who need ample budget",
+      "description": "Best value option for daily development needs",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",

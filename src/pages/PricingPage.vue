@@ -18,8 +18,10 @@
         <h1 class="text-5xl font-bold text-gray-900 dark:text-white mb-6">
           {{ t('title') }}
         </h1>
-        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+        <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed mb-4">
           {{ t('subtitle') }}
+        </p>
+        <p class="text-lg text-gray-500 dark:text-gray-400 max-w-3xl mx-auto" v-html="t('recommendation')">
         </p>
       </div>
 

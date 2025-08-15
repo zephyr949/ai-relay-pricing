@@ -1,7 +1,7 @@
 {
   "title": "服务套餐",
   "subtitle": "从体验到专业的完整解决方案，满足不同层次的开发需求。",
-  "recommendation": "由于AI政策变更频繁，建议购买<strong>周卡-标准套餐</strong>",
+  "recommendation": "日卡体验，周卡优惠",
   "popular": "最受欢迎",
   "per_month": "/月",
   "per_week": "/周",
@@ -11,7 +11,7 @@
   "plans": {
     "trial": {
       "name": "体验套餐",
-      "description": "性价比高，不定期使用的第一选择",
+      "description": "快速体验，按需使用的灵活选择",
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
@@ -21,9 +21,9 @@
         "basic_support": "基础支持"
       }
     },
-    "basic": {
+    "standard": {
       "name": "标准套餐",
-      "description": "针对日常开发，稳定可靠的热门选择",
+      "description": "适中额度，满足日常开发使用",
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
@@ -33,15 +33,15 @@
         "basic_support": "基础支持"
       }
     },
-    "standard": {
+    "professional": {
       "name": "专业套餐",
-      "description": "高频使用，满足密集开发需求",
+      "description": "更高额度，适合高频使用者",
       "button": "购买",
       "features": {
         "supported_models": "支持模型：{models}",
         "total_budget": "总额度：{amount}",
         "daily_budget": "日额度：{amount}",
-        "unlimited_requests": "无限请求次数/月",
+        "unlimited_requests": "无限请求次数/周",
         "basic_support": "基础支持"
       }
     }

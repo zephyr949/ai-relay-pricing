@@ -1,7 +1,7 @@
 {
   "title": "Service Plans",
   "subtitle": "Complete solutions from trial to professional, meeting diverse development needs.",
-  "recommendation": "Due to frequent AI policy changes, we recommend purchasing the <strong>weekly Standard Plan</strong>",
+  "recommendation": "Daily trials, weekly savings",
   "popular": "Most Popular",
   "per_month": "/month",
   "per_week": "/week",
@@ -11,7 +11,7 @@
   "plans": {
     "trial": {
       "name": "Trial Plan",
-      "description": "Great value for occasional development needs",
+      "description": "Quick trial, flexible on-demand usage",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
@@ -21,9 +21,9 @@
         "basic_support": "Basic support"
       }
     },
-    "basic": {
+    "standard": {
       "name": "Standard Plan",
-      "description": "Perfect balance for daily development work",
+      "description": "Moderate quota for daily development usage",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
@@ -33,15 +33,15 @@
         "basic_support": "Basic support"
       }
     },
-    "standard": {
+    "professional": {
       "name": "Professional Plan",
-      "description": "High-volume usage for intensive development",
+      "description": "Higher quota for intensive usage needs",
       "button": "Purchase",
       "features": {
         "supported_models": "Supported models: {models}",
         "total_budget": "Total Budget: {amount}",
         "daily_budget": "Daily Budget: {amount}",
-        "unlimited_requests": "Max Unlimited requests/month",
+        "unlimited_requests": "Max Unlimited requests/week",
         "basic_support": "Basic support"
       }
     }

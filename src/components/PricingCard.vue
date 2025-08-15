@@ -112,7 +112,7 @@ const { budgetConfig } = useEnvConfig()
 const formatFeature = (featureKey: string): string => {
   // 检查是否是支持的模型特性
   if (featureKey.includes('supported_models')) {
-    const planType = featureKey.includes('basic') ? 'basic' : 
+    const planType = featureKey.includes('professional') ? 'professional' : 
                      featureKey.includes('standard') ? 'standard' : 'trial'
     const models = budgetConfig.value[planType].models
     return t.value(featureKey, { models })
@@ -120,7 +120,7 @@ const formatFeature = (featureKey: string): string => {
   
   // 检查是否是总额度特性
   if (featureKey.includes('total_budget')) {
-    const planType = featureKey.includes('basic') ? 'basic' : 
+    const planType = featureKey.includes('professional') ? 'professional' : 
                      featureKey.includes('standard') ? 'standard' : 'trial'
     const amount = formatBudget(budgetConfig.value[planType].total)
     return t.value(featureKey, { amount })
@@ -128,7 +128,7 @@ const formatFeature = (featureKey: string): string => {
   
   // 检查是否是日额度特性
   if (featureKey.includes('daily_budget')) {
-    const planType = featureKey.includes('basic') ? 'basic' : 
+    const planType = featureKey.includes('professional') ? 'professional' : 
                      featureKey.includes('standard') ? 'standard' : 'trial'
     const amount = formatBudget(budgetConfig.value[planType].daily)
     return t.value(featureKey, { amount })

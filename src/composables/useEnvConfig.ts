@@ -26,15 +26,15 @@ export function useEnvConfig() {
       daily: parseFloat(import.meta.env.VITE_TRIAL_PLAN_DAILY_BUDGET || '20'),
       models: import.meta.env.VITE_TRIAL_PLAN_MODELS || 'sonnet-4'
     },
-    basic: {
-      total: parseFloat(import.meta.env.VITE_BASIC_PLAN_TOTAL_BUDGET || '175'),
-      daily: parseFloat(import.meta.env.VITE_BASIC_PLAN_DAILY_BUDGET || '25'),
-      models: import.meta.env.VITE_BASIC_PLAN_MODELS || 'sonnet-4'
-    },
     standard: {
-      total: parseFloat(import.meta.env.VITE_STANDARD_PLAN_TOTAL_BUDGET || '750'),
+      total: parseFloat(import.meta.env.VITE_STANDARD_PLAN_TOTAL_BUDGET || '175'),
       daily: parseFloat(import.meta.env.VITE_STANDARD_PLAN_DAILY_BUDGET || '25'),
       models: import.meta.env.VITE_STANDARD_PLAN_MODELS || 'sonnet-4'
+    },
+    professional: {
+      total: parseFloat(import.meta.env.VITE_PROFESSIONAL_PLAN_TOTAL_BUDGET || '750'),
+      daily: parseFloat(import.meta.env.VITE_PROFESSIONAL_PLAN_DAILY_BUDGET || '25'),
+      models: import.meta.env.VITE_PROFESSIONAL_PLAN_MODELS || 'sonnet-4'
     }
   }))
 
@@ -47,8 +47,8 @@ export function useEnvConfig() {
   // 动态生成套餐配置
   const plans = computed<Plan[]>(() => {
     const trialPeriod = import.meta.env.VITE_TRIAL_PLAN_PERIOD || 'day'
-    const basicPeriod = import.meta.env.VITE_BASIC_PLAN_PERIOD || 'week'
-    const standardPeriod = import.meta.env.VITE_STANDARD_PLAN_PERIOD || 'month'
+    const standardPeriod = import.meta.env.VITE_STANDARD_PLAN_PERIOD || 'week'
+    const professionalPeriod = import.meta.env.VITE_PROFESSIONAL_PLAN_PERIOD || 'month'
     
     return [
       {
@@ -69,26 +69,9 @@ export function useEnvConfig() {
         unavailable: import.meta.env.VITE_TRIAL_PLAN_AVAILABLE !== 'true'
       },
       {
-        id: 'basic',
-        nameKey: 'plans.basic.name',
-        price: parseFloat(import.meta.env.VITE_BASIC_PLAN_PRICE || '9.9'),
-        period: basicPeriod,
-        descriptionKey: 'plans.basic.description',
-        popular: import.meta.env.VITE_BASIC_PLAN_POPULAR === 'true',
-        features: [
-          'plans.basic.features.supported_models',
-          getBudgetFeature('basic', basicPeriod),
-          'plans.basic.features.daily_budget',
-          'plans.basic.features.unlimited_requests',
-          'plans.basic.features.basic_support'
-        ],
-        buttonTextKey: 'plans.basic.button',
-        unavailable: import.meta.env.VITE_BASIC_PLAN_AVAILABLE !== 'true'
-      },
-      {
         id: 'standard',
         nameKey: 'plans.standard.name',
-        price: parseFloat(import.meta.env.VITE_STANDARD_PLAN_PRICE || '229'),
+        price: parseFloat(import.meta.env.VITE_STANDARD_PLAN_PRICE || '9.9'),
         period: standardPeriod,
         descriptionKey: 'plans.standard.description',
         popular: import.meta.env.VITE_STANDARD_PLAN_POPULAR === 'true',
@@ -101,6 +84,23 @@ export function useEnvConfig() {
         ],
         buttonTextKey: 'plans.standard.button',
         unavailable: import.meta.env.VITE_STANDARD_PLAN_AVAILABLE !== 'true'
+      },
+      {
+        id: 'professional',
+        nameKey: 'plans.professional.name',
+        price: parseFloat(import.meta.env.VITE_PROFESSIONAL_PLAN_PRICE || '229'),
+        period: professionalPeriod,
+        descriptionKey: 'plans.professional.description',
+        popular: import.meta.env.VITE_PROFESSIONAL_PLAN_POPULAR === 'true',
+        features: [
+          'plans.professional.features.supported_models',
+          getBudgetFeature('professional', professionalPeriod),
+          'plans.professional.features.daily_budget',
+          'plans.professional.features.unlimited_requests',
+          'plans.professional.features.basic_support'
+        ],
+        buttonTextKey: 'plans.professional.button',
+        unavailable: import.meta.env.VITE_PROFESSIONAL_PLAN_AVAILABLE !== 'true'
       }
     ]
   })

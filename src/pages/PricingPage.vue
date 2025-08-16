@@ -5,8 +5,8 @@
       <div class="flex justify-between items-center mb-8">
         <h1 class="text-4xl font-bold text-primary-500">{{ getSiteName(currentLocale) }}</h1>
         <div class="flex items-center gap-2">
-          <ThemeToggle />
           <LanguageSwitch />
+          <ThemeToggle />
         </div>
       </div>
     </header>

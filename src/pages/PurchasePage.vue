@@ -13,8 +13,8 @@
           {{ t('purchase_page.back_to_pricing') }}
         </router-link>
         <div class="flex items-center gap-2">
-          <ThemeToggle />
           <LanguageSwitch />
+          <ThemeToggle />
         </div>
       </div>
     </header>

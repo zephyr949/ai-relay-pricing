@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "build:check": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "env:sync": "node scripts/sync-env.js",
+    "env:sync:dev": "node scripts/sync-env.js dev",
+    "env:sync:preview": "node scripts/sync-env.js preview",
+    "env:sync:prod": "node scripts/sync-env.js prod",
+    "env:sync:all": "node scripts/sync-env.js all",
+    "env:help": "node scripts/sync-env.js --help"
   },
   "dependencies": {
     "vue": "^3.4.0",
